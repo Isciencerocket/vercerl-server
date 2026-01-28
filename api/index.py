@@ -52,3 +52,8 @@ def send_notification(alert: FireAlert):
         return {"status": "success", "message_id": response}
     except Exception as e:
         return {"status": "error", "details": str(e)}
+    
+    
+@app.get("/test")
+def test():
+    return {"test":"andi"}
